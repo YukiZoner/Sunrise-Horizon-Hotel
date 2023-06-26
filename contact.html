@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sunrise Horizon Hotel | Prenota</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/icons.png" type="image/x-icon">
+
+  <style>
+    body {
+     background: #61b594; /* Цвет фона */
+    }
+    a {cursor: url(images/cursor/cur\ 2.png), pointer;
+    }
+   </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="home.html" class="navbar-brand">
+        <img src="images/Logo.png" alt="Team Dark logo">
+      </a>
+      <a href="home.html" class="logo_name">
+        <h3>Sunrise Horizon Hotel</h3>
+      </a>
+      <nav class="navbar-nav">
+        <ul class="nav_title">
+          <li >
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="camere.html">Camere</a>
+          </li>
+          <li>
+            <a href="Servizzi.html">Servizi</a>
+          </li>
+          <li>
+            <a href="contact.html">Prenota</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero hero-sm" style="background-image: url('images/about/hero.jpeg')">
+      <div class="container">
+        <h1 class="mb-0">Prenota</h1>
+      </div>
+    </section>
+
+    <!-- Form and text -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-form">
+          <div class="contact-form__form">
+            <form action="#" name="submit-to-google-sheet" class="form-layout" method="post">
+              <div class="form-col-50">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" class="form-control _req" id="name" autocomplete="off" required>
+                </div>
+              <div class="form-col-50">
+                <label for="check-in">Arrivo:</label>
+                <input type="date" name="datain" id="check-in" class="form-control _req" required>
+              </div>
+              <div class="form-col-50">
+                <label for="phone">Numero di telefono:</label>
+                <input type="tel" name="phone" id="phone" class="form-control _req" required>
+              </div>
+                
+              <div class="form-col-50">
+                <label for="check-out">Andata:</label>
+                <input type="date" id="check-out" name="dataout" class="form-control _req" required>
+              </div>
+
+              <div class="form-col-50">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control _req _email" required>
+              </div>
+
+              <div class="form-col-50">
+                  <label for="room-type">Tipo di camera:</label>
+                  <select id="room-type" class="form-control" name="mySelect" id="mySelect" required>
+                      <option value="Standard">Standard</option>
+                      <option value="Standard Plus">Standard Plus</option>
+                      <option value="Juniorsuite">Juniorsuite</option>
+                      <option value="Suite">Suite</option>
+                  </select>
+                  
+                </div>
+
+              <div class="form-col">
+                <label for="additional">Messaggio:</label>
+                <textarea type="text" class="form-control"  name="comments"></textarea>
+              </div>
+
+              <div class="form-col">
+                <input type="checkbox" name="check" id="check" checked required />
+                <label for="rule">Acconsento al trattamento dei dati personali</label>
+              </div>
+
+              
+              <div class="form-col">
+                <button class="btn btn-primary" type="submit">
+                  Invia
+                </button>
+
+                <span id="sendText"></span>
+
+              </div>
+            </form>
+          </div>
+          <div class="contact-form__info">
+            <p class="lead">Email: <a href="Yukinekune@gmail.com">SunriseHotel@gmail.com</a></p>
+            <p class="lead">Phone: <a href="tel:+380680599505">+ 39 324 779 2628</a></p>
+            <br>
+            <!-- <p class="lead">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.</p>
+            <p class="lead">We are open from 9am — 5pm week days.</p> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96193.77858909058!2d16.79967976754535!3d41.111477186033085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8f8f3078d6f%3A0x87254066a3908e1!2sBari%20BA%2C%20Italia!5e0!3m2!1sit!2sua!4v1685024265448!5m2!1sit!2sua" width="700" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <small class="footer-copyright">© 2023 Sunrise Horizon Hotel — All Rights Reserved Illia</small>
+        <ul class="footer-social">
+          <li>
+            <a href="#">
+              <img src="images/icons/facebook.svg" alt="Team Dark on Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/icons/instagram.svg" alt="Team Dark on Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/icons/youtube.svg" alt="Team Dark on Youtube">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/icons/telegram.svg" alt="Team Dark on Telegram">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/Style.js"></script>
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2O3DtVJS_QzRYeMNjEjSY8d79mZrlY9v5SQNiWG1KegSl3TTWg35jvea2y8TXdoELkg/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const sendText = document.getElementById('sendText')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            sendText.innerHTML = "Thank's send"
+            setTimeout(function(){
+              sendText.innerHTML = ""
+    
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+
+  
+
+</body>
+
+
+</html>
